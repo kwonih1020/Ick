@@ -40,7 +40,6 @@ a {
   cursor: pointer;
   left: 50%;
   transform: translate(-50%, -50%);
-  background-color: rgba(255,255,255,.3);
   border-radius: 30%;
   width: 500px;
 }
@@ -75,7 +74,8 @@ a {
   width: 60px;
   height: 60px;
   margin: 20px;
-  padding-top: 20px;
+  background-color: rgba(255,255,255,.3);
+  border-radius: 10%;
 }
 
 .resume a {
