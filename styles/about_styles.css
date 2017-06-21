@@ -75,6 +75,9 @@ body {
 
 .smoke_animation ul li:nth-child(11) { animation-delay: 0s; }
 
+.smoke_animation ul li {
+  animation: fadeIn 6s;
+}
 
 h4 {
   font-family: 'Lato', sans-serif;
