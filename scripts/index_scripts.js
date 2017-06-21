@@ -13,4 +13,8 @@ $(document).ready(function(){
 		$('.menu-name').toggleClass('bump');
 		$('.bg-cover').toggleClass('reveal');
 	});
+
+	setTimeout(function(){
+		$(".text-animation").removeClass("hidden");
+	}, 500);
 });

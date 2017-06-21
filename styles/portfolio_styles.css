@@ -7,29 +7,91 @@ body {
   height: 100%;
 }
 
-.myself {
-  margin: 0;
+.smoke_animation {
   position: absolute;
-  top: 20%;
+  top: 25%;
   left: 50%;
-  margin-right: -50%;
   transform: translate(-50%, -50%);
   text-align: center;
-  max-height: 100%;
-  max-width: 100%;
 }
 
-h1 {
-  font-family: 'Voltaire', sans-serif;
-  letter-spacing: 10px;
-  color: white;
-  font-size: 400%;
+.smoke_animation ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
 }
+
+.smoke_animation ul li {
+  list-style: none;
+  color: white;
+  font-weight: bolder;
+  letter-spacing: 15px;
+  font-size: 400%;
+  font-family: 'Voltaire', sans-serif;
+}
+
+.smoke_animation ul:hover li {
+  animation: animate 2s linear infinite;
+}
+
+@keyframes animate {
+  0% {
+    transform: rotate(0deg) translateY(0px);
+    opacity: 1;
+    filter: blur(1px);
+  }
+  100% {
+    transform: rotate(45deg) translateY(-200px);
+    opacity: 0;
+    filter: blur(10px);
+  }
+}
+
+.smoke_animation ul li:nth-child(1) { animation-delay: 0s; }
+
+.smoke_animation ul li:nth-child(2) { animation-delay: 0s; }
+
+.smoke_animation ul li:nth-child(3) {
+  animation-delay: 0s;
+  margin-right: 16px;
+}
+
+.smoke_animation ul li:nth-child(4) { animation-delay: 0s; }
+
+.smoke_animation ul li:nth-child(5) { animation-delay: 0s; }
+
+.smoke_animation ul li:nth-child(6) { animation-delay: 0s; }
+
+.smoke_animation ul li:nth-child(7) {
+  animation-delay: 0s;
+  margin-right: 16px;
+}
+
+.smoke_animation ul li:nth-child(8) { animation-delay: 0s; }
+
+.smoke_animation ul li:nth-child(9) { animation-delay: 0s; }
+
+.smoke_animation ul li:nth-child(10) { animation-delay: 0s; }
+
+.smoke_animation ul li:nth-child(11) { animation-delay: 0s; }
+
 
 h4 {
   font-family: 'Lato', sans-serif;
   letter-spacing: 4px;
   color: rgb(231, 189, 116);
+  animation: fadeIn 6s;
+  font-size: 150%;
+}
+
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 3;
+  }
 }
 
 .projectContainer {
