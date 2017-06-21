@@ -13,4 +13,7 @@ $(document).ready(function(){
 		$('.menu-name').toggleClass('bump');
 		$('.bg-cover').toggleClass('reveal');
 	});
+	$("#flip").click(function(){
+        $("#panel").slideToggle("slow");
+    });
 });
