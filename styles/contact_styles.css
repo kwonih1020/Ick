@@ -124,6 +124,7 @@ a {
   max-height: 100%;
   max-width: 100%;
   color: rgba(255,255,255,.5);
+  cursor: pointer;
 }
 
 #flip ul {
@@ -183,6 +184,7 @@ a {
   font-size: 200%;
   font-family: 'Voltaire', sans-serif;
   letter-spacing: 5px;
+  overflow: hidden;
 }
 
 .resume {
@@ -195,6 +197,35 @@ a {
   text-align: center;
   max-height: 100%;
   max-width: 100%;
+  cursor: pointer;
+}
+
+.resume a:before {
+  display: flex;
+  content: "My Resume";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: all 0.5s;
+}
+
+.resume a:hover:before {
+  top: -20px;
+}
+
+/*.resume a:after {
+  font-family: 'Ionicons';
+  content: '\f41f';
+  position: absolute;
+  top: calc(100% + 30px);
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: all 0.5s;
+}*/
+
+.resume a:hover:after {
+  top: 50%;
 }
 
 .bg-cover {
