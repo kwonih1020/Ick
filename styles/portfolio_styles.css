@@ -180,6 +180,7 @@ a.project_link img {
 	left: calc(100% - 100px);
 	top: 20px;
   z-index: 1;
+  cursor: pointer;
 }
 
 .top, .middle{

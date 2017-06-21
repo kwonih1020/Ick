@@ -193,6 +193,7 @@ a {
 	overflow: auto;
 	left: calc(100% - 100px);
 	top: 20px;
+  cursor: pointer;
 }
 
 .top, .middle{
