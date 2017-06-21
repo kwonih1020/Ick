@@ -31,7 +31,7 @@ $(document).ready(function(){
         });
     $("#project_pic3").on({
         mouseenter: function() {
-            $("#project_pic3").attr("src", "./images/gif/1.gif"); //on hover replace pic.png to pic.gif(animation
+            $("#project_pic3").attr("src", "./images/gif/weatro.gif"); //on hover replace pic.png to pic.gif(animation
           },
           mouseleave: function() {
             $("#project_pic3").attr("src", "./images/screenshots/weatro.png"); //change pic.gif to pic.png
